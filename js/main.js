@@ -1306,7 +1306,7 @@ function calc_offline_progress(ms){
         intervalID = 0
         totalTimes = 0
         executedTimes = 0        
-        var offline_max_time = 3600 * 1000 // 1 hour
+        var offline_max_time = 3600 * 1000 * 24 // 24 hours
         if (ms > offline_max_time)
             ms = offline_max_time
         const updates_in_one_tick = 100
