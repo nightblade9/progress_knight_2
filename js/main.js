@@ -1316,16 +1316,9 @@ function calc_offline_progress(ms){
         document.getElementById("mainarea").hidden = true
 
 
-        var offline_time_debugz = ms / 1000 / 60 // minutes
-        var offline_time_unit = "minutes"
+        var offline_time_debugz = ms / (3600 * 1000) // hours
 
-        if (offline_max_time > 60)
-        {
-            offline_max_time = offline_max_time / 60
-            offline_time_unit = "hours"
-        }
-
-        console.log("Generating offline time for " + offline_time_debugz + " " + offline_time_unit)        
+        console.log("Generating offline time for " + offline_time_debugz + " hours")        
         setIntervalX(() => update_times(updates_in_one_tick), 20, times)        
     }
 }
