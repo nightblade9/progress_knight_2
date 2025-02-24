@@ -2,4 +2,4 @@
 
 A continuation of Progress Knight 2.0. Contains 5 prestige layers with various unique mechanics.
 
-PRs which fix bugs are welcome :)
+This is NB's version, which increases the offline time max to 24h.
